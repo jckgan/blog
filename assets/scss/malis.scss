@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap'); /* Open Sans */
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Roman'),
+    url("/fonts/et-book-ligatures-enabled/et-book-roman-old-style-figures/etbookot-roman-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-roman-old-style-figures/etbookot-roman-webfont.woff");
+}
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Bold'),
+    url("/fonts/et-book-ligatures-enabled/et-book-bold-line-figures/etbookot-bold-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-bold-line-figures/etbookot-bold-webfont.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ETBook";
+  src:
+    local('ETBookOT Italic'),
+    url("/fonts/et-book-ligatures-enabled/et-book-display-italic-old-style-figures/etbookot-italic-webfont.woff2"),
+    url("/fonts/et-book-ligatures-enabled/et-book-display-italic-old-style-figures/etbookot-italic-webfont.woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Regular'),
+    url("/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Bold'),
+    url("/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Italic'),
+    url("/fonts/Roboto/Roboto-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src:
+    local('Roboto Bold Italic'),
+    url("/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Regular'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-regular-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Bold'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bold-webfont.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Bold Italic'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-bolditalic-webfont.woff");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src:
+    local('Ubuntu Mono Italic'),
+    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff2"),
+    url("/fonts/Ubuntu_Mono/ubuntumono-italic-webfont.woff");
+  font-style: italic;
+}
+
+
+// dark theme
+
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Roboto', sans-serif;
+$navbar-font-family: 'Open Sans', sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 1.55;
+$code-line-height: 1.4;
+$base-letter-spacing: 0.02em;
+
+$base-font-weight: 300;
+$title-font-weight: 600;
+$heading-font-weight: 700;
+$code-font-weight: 400;
+
+$small-font-size: $base-font-size * 0.8;
+$code-font-family: monospace;
+$code-font-size: $base-font-size * 0.85;
+$tag-font-size: $base-font-size * 0.75;
+$sidebar-font-size: $base-font-size * 0.9;
+$katex-font-size:  $base-font-size * 1.1;
+
+$heading-text: #eee;
+$base-text: #eee;
+$grey-text: #888;
+$link-1: #78c5ef;
+$link-2: #6ecdc0;
+
+$code-1: #e9a9db;
+$bg-code:#1b1b1b;
+
+$code-tag: #bbb;
+$bg-tag:#1b1b1b;
+
+$bg-0:   #0C0C0C;
+$bg-1:   #333;
+$bg-highlight:   #151515;
+
+$bg-quote:   #151515;
+$bg-table: #222;
+$bg-pre-border: #222;
+$bg-sidebar: #000;
+$bg-sidebar-border: #1F1F1F;
+
+$button-1: #9371b8;
+$button-1-bg: #111;
+
+$content-width: 750px;
+$sidebar-width: 300px;
+
+$image-width: 650px;
+$content-max-width: 95%;
+$screen-width-inflection: 1600px;
+$screen-width-mobile: 600px;
+$screen-width-tips: 1366px;
+
+
+@import
+  "malis/base",
+  "malis/layout",
+  "malis/syntax-highlighting"
+;

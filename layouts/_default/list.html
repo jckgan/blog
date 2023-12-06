@@ -1,0 +1,17 @@
+{{ define "details" }}
+<div class="page-details-inline">
+	<div class="go-home">
+		<a href="/">Go home</a>
+	</div>
+</div>
+{{ end }}
+
+{{ define "list" }}
+<ul>
+	{{ range .Pages }}
+	<li>
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	</li>
+	{{ end }}
+</ul>
+{{ end }}

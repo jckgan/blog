@@ -1,0 +1,7 @@
+# macOS
+.DS_Store
+
+# hugo
+.hugo_build.lock
+public/
+resources/

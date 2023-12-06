@@ -1,0 +1,8 @@
+baseURL = "https://jackgannon.xyz"
+
+[params]
+  css_js_version = "8.2"  # change to bypass browser cache
+
+[markup]
+  [markup.highlight]
+    noClasses = false

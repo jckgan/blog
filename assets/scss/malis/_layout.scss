@@ -1,0 +1,319 @@
+/*
+Styling for wrappers around top, body and bottom
+*/
+
+.wrapper {
+  max-width: MIN($content-width, $content-max-width);
+  min-height: 100vh;
+  padding: 1em 3vw;
+  margin-right: auto;
+  margin-left: calc(50vw - #{MIN($content-width, $content-max-width)} / 2 - 3vw);
+  margin-bottom: 1em;
+  background-color: $bg-0;
+
+  @media only screen and (max-width: $screen-width-inflection) {
+    margin-left: auto;
+  }
+}
+
+.wrapper-top {
+  padding: 0.2em 0;
+  border-bottom: 1px $bg-sidebar-border solid;
+  padding-bottom: 0.2em;
+
+  font-family: $navbar-font-family;
+  font-size: $base-font-size * 1.3;
+  
+  width: 100%;
+  background-color: $bg-sidebar;
+
+  a {
+    text-decoration: none;
+    color: $grey-text;
+  }
+
+  a:hover {
+    color: lighten($grey-text, 10%);
+  }
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  scroll-margin-top: 3rem;
+  @media only screen and (max-width: $screen-width-inflection) {
+    scroll-margin-top: 0;
+  }
+}
+
+.wrapper-bottom {
+  max-width: 100%;
+  min-height: 1em;
+  padding: 0 3vw;
+  border-top: 1px $bg-sidebar-border solid;
+  background: $bg-sidebar;
+  padding-bottom: 0.1em;
+}
+
+.wrapper-home {
+  max-width: MIN($content-width, $content-max-width);
+  padding: 1em 3vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  background-color: $bg-0;
+}
+
+
+/*
+Styling for the page
+*/
+
+.page-title {
+  a { color: $base-text; }
+  a:hover { color: $base-text; }
+  a:visited { color: $base-text; }
+  margin-top: 1em;
+  text-align: center;
+  margin-bottom: 0.25em;
+  font-size: 2.2em;
+  font-weight: $title-font-weight;
+  border-bottom: 1px solid $bg-1;
+}
+
+.footnotes {
+  hr {
+    display: none;
+  }
+}
+
+.page-tip-right {
+  display: block;
+  float: right;
+  margin-right: -13em;
+  width: 12em;
+
+  @media only screen and (max-width: $screen-width-tips) {
+    display: none;
+  }
+}
+
+/*
+Styling for post list
+*/
+
+.post-list {
+  margin-top: 2em;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 2.5em;
+
+  .post-date {
+    color: $grey-text;
+    user-select: none;
+  }
+
+  .post-title {
+    a {
+      color: $link-2;
+    }
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: -0.5px;
+    border-bottom: none;
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+
+  .post-tag {
+    font-size: $tag-font-size;
+    color: $code-tag;
+    background-color: $bg-tag;
+    border: 1px $bg-pre-border solid;
+  }
+
+  .post-tags-list {
+    user-select: none;
+  }
+}
+
+/*
+Styling for tag page
+*/
+
+.tag-list {
+  margin-bottom: 1em;
+}
+
+/*
+Styling for navbars
+*/
+
+.navbar-top {
+  user-select: none;
+  display: flex;
+  overflow-x: auto;
+  justify-content: left;
+  padding-left: 3vw;;
+  padding-right: 3vw;
+
+  .navbar-item {
+    margin-right: 1em;
+  }
+}
+
+.navbar-bottom {
+  color: $grey-text;
+  font-size: $small-font-size;
+  user-select: none;
+  display: flex;
+  overflow-x: auto;
+  justify-content: left;
+  padding-left: 3vw;;
+  padding-right: 3vw;
+
+  .navbar-item {
+    margin-right: 1em;
+  }
+}
+
+.navbar-home {
+  margin-top: -1em;
+  user-select: none;
+
+  .category-list {
+    margin-right: 1em;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+}
+
+/*
+Styling for details sidebar
+*/
+
+.page-details {
+  user-select: none;
+  font-size: $sidebar-font-size;
+  float: left;
+  left: 0;
+
+  width: $sidebar-width;
+  margin-top: 2em;
+  margin-left: calc(50vw - #{$sidebar-width} - #{MIN($content-width, $content-max-width)} / 2 - 3vw);
+
+  a {
+    color: $grey-text;
+  }
+
+  b {
+    font-size: $base-font-size;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $screen-width-inflection) {
+    display: none;
+  }
+
+  ul {
+    margin-left: 0;
+    padding-left: 1em;
+  }
+
+  .page-toc {
+    border: 1px transparent solid;
+    border-radius: 0.5em;
+    padding: 1em 1em 1em 1.5em;
+    background-color: $bg-sidebar;
+    border: 1px solid $bg-sidebar-border;
+
+    max-height: calc(100vh - 3em - 2em - 4em - 4em - 7em);
+    overflow-y: auto;
+  }
+}
+
+/*
+Styling for details inline
+*/
+
+.page-details-inline {
+  user-select: none;
+  display: block;
+  text-align: center;
+  min-height: 1em;
+  color: $grey-text;
+  font-size: $small-font-size;
+  margin-top: 1em;
+  margin-bottom: 3em;
+
+  .page-tags {
+    margin-bottom: 0.5em;
+
+    .page-tag {
+      font-size: $tag-font-size;
+      color: $code-tag;
+      background-color: $bg-tag;
+      border: 1px $bg-pre-border solid;
+    }
+  }
+
+  .go-home {
+    float: right;
+  }
+
+  .page-date {
+    display: inline-block;
+    color: $grey-text;
+  }
+}
+
+.page-toc-inline {
+  display: none;
+  user-select: none;
+
+  @media only screen and (max-width: $screen-width-inflection) {
+    display: block;
+    border: 1px transparent solid;
+    background-color: $bg-sidebar-border;
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    margin-bottom: 2em;
+    max-width: MIN($content-width, $content-max-width);
+    width: $sidebar-width;
+
+    a {
+      color: $grey-text;
+    }
+
+    b {
+      font-size: $base-font-size;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 1em;
+    }
+  }
+}
+
+/*
+Styling for theme toggle
+*/
+
+.theme-toggle-parent {
+  color: $grey-text;
+  float: right;
+}
+
+/*
+Styling for katex
+*/
+
+.katex-html {
+  font-size: $katex-font-size;
+}
