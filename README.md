@@ -24,4 +24,4 @@ hugo
 
 ## Acknowledgements & Credits
 
-`blog` is a modified version of [Infinitifall's Succulent](https://github.com/Infinitifall/Succulent), all credit and copyright for styling goes towards [Infinitifall](https://github.com/Infinitifall). See [LICENSE](/LICENSE) for more information.
+`blog` is a modified version of [Infinitifall's Succulent](https://github.com/Infinitifall/Succulent), all credit and copyright for styling, scripts, and website code goes towards [Infinitifall](https://github.com/Infinitifall). See [LICENSE](/LICENSE) for more information.
